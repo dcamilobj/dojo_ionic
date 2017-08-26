@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Dojo Ionic
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label floating>Username</ion-label>
+    <ion-input type="text" value="" [(ngModel)]="username"></ion-input>
+  </ion-item>
+  <button ion-button block (click)="dojo(username)">Hi!</button>
+  <img [src]="info.avatar_url" alt="avatar">
+    {{info.login}}
+    {{info.public_repos}}
+    {{info.name}}
+    {{info.bio}}
+</ion-content>
